@@ -1,0 +1,8 @@
+<div>
+  <input type="text" placeholder="Enter here" #input>
+  <button (click)="handleInput(input)">Button</button>
+  <p>Example for pipe :{{vari | customPipe}}</p>
+  <app-child [inputValue]="textFromInput">
+    <h1>I am projected content{{textFromInput}}</h1>
+  </app-child>
+</div>
